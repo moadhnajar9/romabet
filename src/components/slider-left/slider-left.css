@@ -1,0 +1,36 @@
+small{
+    background: rgba(6, 6, 6, 0.49);
+    border: 1px solid #fff;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 50%;
+}
+.sldier-img-left{
+    position: relative;
+    transform: all 5s ease;
+}
+.slider-left__small{
+  gap: .5rem;
+ 
+  position: absolute;
+  bottom: 35px;
+  left: 65px;
+  
+}
+.slider-left__small>*:hover{
+    background: rgb(128,128,128,.8);
+    cursor: pointer;
+    transition: all .55s ease;
+}
+.active{
+    background: rgb(255, 35, 63);
+   
+    border: 1px solid white;
+    box-shadow: 0px 0px 10px #ff233f;
+}
+.active:hover{
+    background: rgb(255, 35, 63);
+}
+
+

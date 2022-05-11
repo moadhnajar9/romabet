@@ -1,0 +1,39 @@
+.compitition__button{
+    color: #7d7d7d;
+    cursor: pointer;
+    width: 100%;
+    font-size: 12px;
+    background-color: #0f0f0f;
+    border: 0;
+
+}
+
+
+
+.compitition{
+    max-width: 100%;
+    overflow: hidden;
+    
+}
+
+
+.compitition__img {
+    overflow: hidden;
+}
+.compitition__img img{
+    transition: transform .5s ease;
+}
+.compitition__img img:hover{
+    transform: scale(1.1);  
+}
+
+
+.compitition__link--container:hover::after {
+    transform: scaleY(1);
+    
+}
+
+.compitition__link--container:hover>*{
+    color: #0f0f0f;
+    background-color: rgba(202, 69, 71);
+}

@@ -1,0 +1,163 @@
+
+
+/* ------------------- */
+/*    Import font      */
+/* ------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* ------------------- */
+/*  Custom properties  */
+/* ------------------- */
+
+:root {
+  /* colors */
+    --clr-black: rgba(16,16,16);
+    --clr-black-light: rgba(16,16,16,50%);
+    --clr-pink:#ca4547;
+    --clr-red:#e6373e;
+    --clr-white:rgba(255,255,255);
+    --clr-white-tr:rgba(255,255,255);
+
+  /* font */
+  font-family: 'Roboto', sans-serif;
+
+
+  }
+
+
+
+/*--------------------*/
+/*        Reset       */
+/*--------------------*/
+
+/* Box sizing  */
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+/* Reset margins */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+  margin: 0;
+  text-transform: uppercase;
+}
+
+
+
+/* set up the body */
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+    font-size: 14px;
+}
+
+/* img */
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/* form elements */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    text-transform: uppercase;
+}
+
+/* ------------------- */
+/* Utility classes     */
+/* ------------------- */
+
+.flex {
+    display: flex;
+   
+}
+
+.grid {
+    display: grid;
+    
+}
+
+.container {
+    padding-inline: 1rem;
+    margin-inline: auto;
+    max-width: 1350px;
+    
+   
+}
+.container>*{
+  margin-bottom: .6rem;
+}
+
+/* colors */
+
+.bg-black {background-color: var(--clr-black);}
+.bg-black-light {background-color: var(--clr-black-light);}
+.bg-pink {background-color: var(--clr-pink);}
+.bg-red {background-color: var(--clr-red);}
+
+.text-black- {color: var(--clr-black);}
+.text-black-light {color: var(--clr-black-light);}
+.text-white {color: var(--clr-white);}
+.text-white-tr {color: var(--clr-white-tr);}
+
+/* list style */
+ul,
+li{
+  padding: 0;
+  list-style-type: none;
+}
+
+.background-img {
+  background-image: url(https://cmsbetconstruct.com/content/images/0c3ec69d3dd05cdcde9214a933195a79_1867274_background.png);
+        background-size: 100%;
+        background-position: center top;
+        background-attachment:fixed;
+        background-color: #000000;
+        background-repeat: no-repeat;
+    }
+    
+
+
+/* button style */
+
+.btn{
+  border-radius: 15px;
+  height: 30px;
+  border: 1px solid var(--clr-pink);
+  min-width: 100px;
+  font-size: 12px;
+  line-height: 1.14rem;
+  padding:0 15px;
+  color: var(--clr-white);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out
+}
+.btn:hover{
+  box-shadow: var(--clr-pink) 0px 0px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
