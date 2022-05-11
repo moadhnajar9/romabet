@@ -16,7 +16,7 @@ function SliderRight() {
   }, []);
 
   return (
-    <div>
+    <div className='mobile-stop'>
       <img src={imageSliders[index]} alt="sldier-img-right" />
     </div>
   );

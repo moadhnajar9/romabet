@@ -7,7 +7,7 @@ function Slider() {
   return (
     <div className='sliders flex'>
       <SliderLeft/>
-      <SliderRigth/>
+      <SliderRigth />
     </div>
   );
 }
