@@ -88,20 +88,23 @@ const Mobile = () => (
   <div className="Romabet583__mobile grid grid--container ">
     <div className="grid--container__header">
       <HeaderMobile />
-      <div className="grid--container__navigationItem">
-        <NavigationItem />
-      </div>
-      <div className="test flex">
+    </div>
+
+    <div className="grid--container__main flex">
+      <div className="grid--container__aside">
+        <div className="grid--container__navigationItem">
+          <NavigationItem />
+        </div>
         <div className="grid--container__sidebar">
           <Sidebar />
         </div>
-        <div className="grid--container__sliderMobile">
+      </div>
+      <div className="grid--container__sliderMobile">
+        <div>
           <SlidersMobile />
         </div>
       </div>
     </div>
-
-    <div className="grid--container__main"></div>
   </div>
 );
 

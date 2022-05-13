@@ -35,45 +35,47 @@ const imageSliderMobileData = [
   imag15,
 ];
 
-const Pagination = (props) => (
-  <>
-    {imageSliderMobileData.map((img, i) => (
-      <small
-        key={i}
-        className={props.activeIndex === i ? "active-mobile" : ""}
-        onClick={() => props.onClick(i)}
-      ></small>
-    ))}
-  </>
-);
+// const Pagination = (props) => (
+//   <>
+//     {imageSliderMobileData.map((img, i) => (
+//       <small
+//         key={i}
+//         className={props.activeIndex === i ? "active-mobile" : ""}
+//         onClick={() => props.onClick(i)}
+//       ></small>
+//     ))}
+//   </>
+// );
 
 function SlidersMobile() {
-  const [index, setIndex] = React.useState(0);
-  React.useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prevIndex) =>
-        prevIndex === imageSliderMobileData.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
+  // const [index, setIndex] = React.useState(0);
 
-  const selectImg = (index) => {
-    setTimeout(() => {
-      setIndex(index);
-    }, 55);
-  };
+  // React.useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setIndex((prevIndex) =>
+  //       prevIndex === imageSliderMobileData.length - 1 ? 0 : prevIndex + 1
+  //     );
+  //   }, 5000);
+  //   return () => clearInterval(interval);
+  // }, []);
+
+  // const selectImg = (index) => {
+  //   setTimeout(() => {
+  //     setIndex(index);
+  //   }, 55);
+  // };
+
   return (
-    <div className="sldier-img-left/">
-      <div>
-        <img
-          className="imgslider/"
-          src={imageSliderMobileData[index]}
-          alt="sldier-img-left"
-        />
+    <div className="sldier-img--mobile">
+      <div className="sldier-img--mobile__image">
+        {imageSliderMobileData.map((image, index) => (
+          <img key={index} src={image} alt={`img${index}`} />
+        ))}
       </div>
+
       <div className="slider-left__small/ flex/">
-        <Pagination className="" onClick={selectImg} activeIndex={index} />
+        {/*  <Pagination className="" onClick={selectImg} activeIndex={index} /> */}
+        <div className="radio"></div>
       </div>
     </div>
   );

@@ -1,0 +1,19 @@
+/* delate */
+.sldier-img--mobile__image {
+  display: flex;
+  flex-wrap: nowrap;
+
+  overflow-x: scroll;
+  animation: slider 0.5s ease-in-out delay infinite direction fill-mode;
+}
+@keyframes slider {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.radio {
+  height: 50px;
+  width: 100%;
+  background-color: blue;
+}
