@@ -1,0 +1,8 @@
+.header__mobile {
+  background-color: var(--clr-black);
+  border-bottom: 0.18rem solid var(--clr-pink);
+}
+
+.header__mobile--img {
+  margin-inline: auto;
+}

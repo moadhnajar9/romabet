@@ -5,8 +5,8 @@ function Compitition(props) {
     <div className='compitition'>
       <a className='compitition__link' href={`#${props.champition.name}`}>
         <div className='compitition__link--container'>
-          <div className='compitition__img'><img className='' src={props.champition.url} alt={`${props.champition.name}`} /></div>
-          <button className='compitition__button'>{props.champition.name}</button>
+          <div className='compitition__img'><img src={props.champition.url} alt={`${props.champition.name}`} /></div>
+          <div className='compitition__button'><button className='compition__button--btn btn--background-top-to-bottom'>{props.champition.name}</button></div>
         </div>
       </a>
     </div>

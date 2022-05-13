@@ -1,0 +1,43 @@
+.sidebar {
+  color: #fff;
+}
+.sidebar__sports--title,
+.sidebar__frequently--title {
+  background-color: black;
+  justify-content: space-between;
+  line-height: 1rem;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+  border-bottom: 2px solid transparent;
+}
+.sidebar__sports--title--text,
+.sidebar__frequently--title--text {
+  text-transform: capitalize;
+  margin: 0;
+}
+.sidebar__sports--title--number {
+  padding-right: 1rem;
+}
+.sports--title,
+.frequently--title {
+  align-items: center;
+  gap: 1rem;
+  font-size: 100%;
+  font-weight: 400;
+}
+.sidebar__sports--title--icon,
+.sidebar__frequently--title--icon {
+  padding-left: 0.5rem;
+}
+.sidebar__frequently--title--button {
+  padding-right: 0.5rem;
+}
+.sidebar__frequently--title--arrow {
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+}
+/* ----- */
+
+.sidebar__navigation--icons {
+  gap: 1px;
+}

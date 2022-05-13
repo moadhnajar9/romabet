@@ -1,0 +1,23 @@
+.navbar__mobile--logo--img {
+  max-width: 180px;
+  margin: auto;
+}
+
+.navbar__mobile--logo {
+  flex: 5;
+}
+.navbar__mobile {
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar__mobile--login--links {
+  margin-bottom: 0;
+}
+.navbar__mobile--link {
+  margin-bottom: 0;
+}
+.navbar__mobile--login--links span {
+  font-size: 100%;
+  padding-inline: 0.3rem;
+  line-height: 16px;
+}
