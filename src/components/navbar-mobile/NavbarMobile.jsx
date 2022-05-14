@@ -15,7 +15,7 @@ const NavbarMobile = (props) => {
         >
           <li className="navbar__mobile--link">
             <a href="#join">
-              <span>join</span>
+              <span className="navbar__mobile--link__join">join</span>
             </a>
           </li>
           <li className="navbar__mobile--link">

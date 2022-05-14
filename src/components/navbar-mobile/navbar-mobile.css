@@ -21,6 +21,10 @@
   padding-inline: 0.3rem;
   line-height: 16px;
 }
+
+.navbar__mobile--link__join {
+  color: red;
+}
 @media screen and (max-width: 350px) {
   .navbar__mobile--logo--img {
     max-width: 120px;
