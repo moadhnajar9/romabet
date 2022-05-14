@@ -1,0 +1,19 @@
+.main-nav-icon__container {
+  flex-direction: column;
+  background-color: #212121;
+  color: rgba(255, 255, 255, 0.9);
+  justify-content: center;
+  align-items: center;
+  padding: 12px 8px;
+  gap: 0.1rem;
+}
+
+.main-nav-icon__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-nav-icon__name {
+  line-height: 0;
+  font-size: 10px;
+}

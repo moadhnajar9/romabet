@@ -2,6 +2,7 @@
   height: 100vh;
   /* overflow: hidden; */
 }
+
 .grid--container__header {
   position: fixed;
   width: 100%;
@@ -28,10 +29,64 @@
   flex: 70%;
 }
 
-/* best  */
-
 .grid--container__sidebar {
   max-height: 90vh;
   overflow-y: scroll;
   transform: translateY(60px);
+}
+
+/* responsive */
+
+.Romabet583__mobile {
+  display: none;
+}
+.menuToggle {
+  display: none;
+}
+
+/* ---------------------- */
+/*  screen 1024px tablet  */
+/* ---------------------- */
+@media screen and (max-width: 1024px) {
+  .Romabet583__mobile {
+    display: block;
+  }
+}
+
+/* ---------------------- */
+/*  screen 1024px mobile  */
+/* ---------------------- */
+
+@media screen and (max-width: 979px) {
+  .romabet583 {
+    position: relative;
+  }
+  .menuToggle {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: -50px;
+    z-index: 99;
+  }
+  .fix {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: -50px;
+    z-index: 99;
+  }
+  .grid--container__aside {
+    position: fixed;
+    top: 0;
+    width: 90%;
+    transform: translateX(-100%);
+  }
+
+  .grid--container__navigationItem {
+    width: 99.5%;
+  }
+  .active-sidebar {
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0%);
+  }
 }

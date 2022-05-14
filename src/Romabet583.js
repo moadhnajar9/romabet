@@ -14,12 +14,14 @@ import NavigationIcons from "./components/navigation-icons/NavigationIcons";
 import { IoTimerOutline } from "react-icons/io5";
 import { BsFillRecordCircleFill } from "react-icons/bs";
 import { MdLiveTv } from "react-icons/md";
-import { CgCardSpades, CgScreen } from "react-icons/cg";
+import { CgCardSpades, CgScreen, CgMenuLeftAlt } from "react-icons/cg";
 import { GiWorld, GiZeppelin, GiKeyboard } from "react-icons/gi";
 import { AiFillGift } from "react-icons/ai";
 import { FaHorseHead } from "react-icons/fa";
 import { HiOutlineCurrencyDollar } from "react-icons/hi";
 import { ImMobile } from "react-icons/im";
+import { FiX } from "react-icons/fi";
+import MainIcons from "./containers/main-icons/MainIcons";
 
 const navigationIconsData = [
   {
@@ -84,31 +86,57 @@ const NavigationItem = () => {
   );
 };
 
-const Mobile = () => (
-  <div className="Romabet583__mobile grid grid--container ">
-    <div className="grid--container__header">
-      <HeaderMobile />
-    </div>
+const Mobile = (props) => {
+  return (
+    <div className="Romabet583__mobile grid grid--container ">
+      <div className="grid--container__header">
+        <HeaderMobile humbToggle={props.humbToggle} />
+      </div>
 
-    <div className="grid--container__main flex">
-      <div className="grid--container__aside">
-        <div className="grid--container__navigationItem">
-          <NavigationItem />
+      <div className="grid--container__main flex">
+        <div
+          className={`grid--container__aside ${
+            props.humbToggle ? "active-sidebar" : ""
+          }`}
+        >
+          <div className="">
+            <div className="grid--container__navigationItem ">
+              <NavigationItem />
+            </div>
+            <div className="grid--container__sidebar">
+              <Sidebar />
+            </div>
+          </div>
+          {!props.humbToggle ? (
+            <div className="menuToggle" onClick={props.handleClick}>
+              <CgMenuLeftAlt size={40} color={"rgba(142, 147, 163)"} />
+            </div>
+          ) : (
+            <div className="fix" onClick={props.handleClick}>
+              <FiX size={40} color={"rgba(142, 147, 163)"} />
+            </div>
+          )}
         </div>
-        <div className="grid--container__sidebar">
-          <Sidebar />
-        </div>
-      </div>
-      <div className="grid--container__sliderMobile">
-        <div>
-          <SlidersMobile />
+        <div className="grid--container__sliderMobile">
+          <div>
+            <SlidersMobile />
+          </div>
+          <div>
+            <MainIcons navigationIconsData={navigationIconsData} />
+          </div>
         </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 const Romabet583 = () => {
+  /* mobile */
+  const [humbToggle, setHumbToggle] = React.useState(false);
+  /* ------- */
+  const handleClick = () => {
+    setHumbToggle((prevState) => !prevState);
+  };
   return (
     <div className="romabet583">
       <div className="desktop container">
@@ -116,7 +144,7 @@ const Romabet583 = () => {
         <Slider />
         <Compititions />
       </div>
-      <Mobile />
+      <Mobile humbToggle={humbToggle} handleClick={handleClick} />
     </div>
   );
 };

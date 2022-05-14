@@ -21,3 +21,8 @@
   padding-inline: 0.3rem;
   line-height: 16px;
 }
+@media screen and (max-width: 350px) {
+  .navbar__mobile--logo--img {
+    max-width: 120px;
+  }
+}
